@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - survery form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="header">
+    <h1 id="title" class="text-center">Marvel Survey Form</h1>
+    <p id="description" class="description text-center"><strong>
+            Do you really know the Marvel Universe?</strong>
+    </p>
+</header>
+<form id="survey-form">
+    <div class="form-group">
+        <label id="name-label" for="name"><strong>Name:</strong></label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        <div>
+            <label id="email-label" for="Email"><strong>Email:</strong></label>
+            <input type="email" required id="email" name="user_email" placeholder="Enter email here">  
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number"><strong>Age:</strong><span class="clue"> </span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+        </div>
+        <p><strong>How many years have you watched Marvel or heard of Marvel?</strong></p>
+        <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select # of years</option>
+            <option value="never watched or heard of">Never watched or heard of </option>
+            <option value="1-2 years">1-2 years </option>
+            <option value="3-5 years">3-5 years</option>
+            <option value="6-8 years">6-8 years</option>
+            <option value="9+ years">9+ years</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <p><strong> Who was the first Marvel character to ever have a movie?</strong></p>
+        <label>
+            <input name="user-recommend" value="The Hulk" type="radio" class="input-radio" checked />The Hulk</label>
+        <label>
+            <input name="user-recommend" value="captian America" type="radio" class="input-radio" />Captain
+            America</label>
+
+        <label><input name="user-recommend" value="Ironman" type="radio" class="input-radio" />Ironman</label>
+        <label>
+            <input name="user-recommend" value="Black Panther" type="radio" class="input-radio" checked />Black
+            Panther</label>
+        <label>
+            <input name="user-recommend" value="Thor" type="radio" class="input-radio" checked />Black Widow</label>
+    </div>
+
+
+    <div>
+        <p> <strong>Who are the six marvel characters that make up the avengers?</strong></p>
+
+        <input type="checkbox" id="Ironman" name="Ironman" value="ironman">
+        <label for="ironman"> Ironman</label><br>
+        <input type="checkbox" id="captain america" name="captain america" value="captain america">
+        <label for="captain america"> Captan America</label><br>
+        <input type="checkbox" id="wolverine" name="wolverine" value="wolverine">
+        <label for="wolverine"> Wolverine</label><br>
+        <input type="checkbox" id="Thor" name="thor" value="thor">
+        <label for="Thor"> Thor</label><br>
+        <input type="checkbox" id="black panther" name="black panther" value="black panther">
+        <label for="Black panther"> Black Panther</label><br>
+        <input type="checkbox" id="hawkeye" name="hawkeye" value="hawkeye">
+        <label for="Hawkeye"> Hawkeye</label><br>
+        <input type="checkbox" id="Black widow" name="Black widow" value="black widow">
+        <label for="Black widow">Black Widow</label><br>
+        <input type="checkbox" id="Storm" name="Storm" value="hero">
+        <label for="Storm"> Storm</label><br>
+        <input type="checkbox" id="The Hulk" name="The Hulk" value="The Hulk">
+        <label for="The Hulk">The Hulk</label><br>
+
+    </div>
+
+    <div>
+        <label for="msg"></label>
+        <p> <strong>Explain in two sentences or more why you like marvel?</strong> </p>
+        <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>  
+    </div>
+<div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+</form>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
